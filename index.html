@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Kulturref HBC</title>
+<meta name="description" content="Partyplanung für das Kulturreferat der Verfassten Studierendenschaft HBC">
+<meta name="theme-color" content="#7a2e8c">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Kulturref">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="icon" href="icon-192.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div>
+      <h1>Kulturref</h1>
+      <div class="sub" id="sub">Verfasste Studierendenschaft HBC</div>
+    </div>
+    <button class="chip" id="me" hidden></button>
+  </header>
+
+  <main id="main"><div class="loading">Lade …</div></main>
+</div>
+
+<nav class="tabs" id="tabs" hidden>
+  <button data-tab="due" class="on"><span class="i">✓</span>Fällig</button>
+  <button data-tab="events"><span class="i">★</span>Partys</button>
+  <button data-tab="sec"><span class="i">⛨</span>Security</button>
+  <button data-tab="contacts"><span class="i">☎</span>Kontakte</button>
+  <button data-tab="more"><span class="i">⋯</span>Mehr</button>
+</nav>
+
+<div class="toast" id="toast" hidden></div>
+<script type="module" src="app.js"></script>
+</body>
+</html>
